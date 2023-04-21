@@ -1,25 +1,17 @@
 project:
   type: website
 
-execute:
-  freeze: auto
-
 website:
   twitter-card: true
   title: "Yi Jou (Ruby) Liao"
   navbar:
     search: false
     background: "primary"
-    right:
-      - text: "About"
-        file: index.qmd
+    left:
       - text: "Blog"
         file: rublog.qmd
-    tools:
-      - icon: github
-        href:  https://github.com/liaoyjruby
-      - icon: twitter
-        href: https://twitter.com/liaoyjruby
+      - text: "CV"
+        file: cv.qmd
 format:
   html:
     theme:

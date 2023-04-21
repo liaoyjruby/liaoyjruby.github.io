@@ -4,21 +4,27 @@ image: ./imgs/bubs.jpg
 about:
   template: trestles
   links:
-    - icon: twitter
-      href: https://twitter.com/liaoyjruby
-    - icon: linkedin
-      href: https://www.linkedin.com/in/liaoyjruby/
+    - icon: envelope-fill
+      href: mailto:liaoyjruby@ucla.edu
     - icon: github
       href: https://github.com/liaoyjruby
+    - icon: linkedin
+      href: https://www.linkedin.com/in/liaoyjruby/
+    - icon: twitter
+      href: https://twitter.com/liaoyjruby
     - icon: instagram
       href: https://www.instagram.com/rubsyl/
     - icon: discord
       href: https://discord.com/users/644759942112346123
     - icon: spotify
       href: https://open.spotify.com/user/rubsydubs?si=8c1387a452cd466a
-    - icon: steam
-      href: https://steamcommunity.com/id/rubsyl/
 
 ---
 
-About this blog
+Hi friends! :^)
+
+I'm currently a Computational Research Assistant at the [Graeber Lab](https://systems.crump.ucla.edu/), where I'm part of a project characterizing recurrent ovarian cancers. I also assist the [UCLA Metabolomics Center](https://systems.crump.ucla.edu/metabolomics_center/) with quality control and exploratory data analysis of mass spectrometry metabolomics data. 
+
+Previously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in [Computational & Systems Biology](https://casb.ucla.edu/) with a Concentration in Data Science. Check out [my CV](cv.qmd) for more of my background.
+
+In my free time, I enjoy [listening to music](https://www.last.fm/user/rubsyl) (pop/k-pop/indie/electronic), [playing video games](https://steamcommunity.com/id/rubsyl/) (simulation/sandbox/story-driven), and figuring out ways to optimize my personal workflow efficiency.
