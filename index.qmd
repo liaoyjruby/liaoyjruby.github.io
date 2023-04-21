@@ -1,0 +1,24 @@
+---
+title: "Yi Jou (Ruby) Liao"
+image: ./imgs/bubs.jpg
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      href: https://twitter.com/liaoyjruby
+    - icon: linkedin
+      href: https://www.linkedin.com/in/liaoyjruby/
+    - icon: github
+      href: https://github.com/liaoyjruby
+    - icon: instagram
+      href: https://www.instagram.com/rubsyl/
+    - icon: discord
+      href: https://discord.com/users/644759942112346123
+    - icon: spotify
+      href: https://open.spotify.com/user/rubsydubs?si=8c1387a452cd466a
+    - icon: steam
+      href: https://steamcommunity.com/id/rubsyl/
+
+---
+
+About this blog
