@@ -4,11 +4,12 @@ project:
 website:
   site-url: "https://www.liaoyjruby.com"
   title: "Yi Jou (Ruby) Liao"
-  favicon: imgs/kyute.png
+  favicon: kyute.png
   twitter-card:
     creator: "@liaoyjruby"
   open-graph: true
   navbar:
+    logo: kyute.png
     search: false
     background: "primary"
     left:
@@ -16,6 +17,10 @@ website:
         file: rublog.qmd
       - text: "CV"
         file: cv.qmd
+  google-analytics: "G-CGMN9S98KJ"
+  cookie-consent:
+    type: express
+
 format:
   html:
     theme:
