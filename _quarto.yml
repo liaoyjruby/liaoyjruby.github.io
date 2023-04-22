@@ -17,9 +17,9 @@ website:
         file: rublog.qmd
       - text: "CV"
         file: cv.qmd
-  google-analytics: "G-CGMN9S98KJ"
-  cookie-consent:
-    type: express
+  google-analytics: 
+    tracking-id: "G-CGMN9S98KJ"
+    storage: none
 
 format:
   html:
