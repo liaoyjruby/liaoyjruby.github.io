@@ -2,8 +2,12 @@ project:
   type: website
 
 website:
-  twitter-card: true
+  site-url: "https://www.liaoyjruby.com"
   title: "Yi Jou (Ruby) Liao"
+  favicon: imgs/kyute.png
+  twitter-card:
+    creator: "@liaoyjruby"
+  open-graph: true
   navbar:
     search: false
     background: "primary"

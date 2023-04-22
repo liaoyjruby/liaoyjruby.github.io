@@ -1,5 +1,13 @@
 ---
+output:
+    pdf_document:
+        latex_engine: pdflatex
+geometry: margin=1in
+
 title: "Curriculum Vitae"
+author: Yi Jou (Ruby) Liao
+
+
 ---
 
 WIP
