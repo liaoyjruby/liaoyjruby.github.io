@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  site-url: "https://www.liaoyjruby.com"
+  site-url: "https://liaoyjruby.com"
   title: "Yi Jou (Ruby) Liao"
   favicon: kyute.png
   twitter-card:
@@ -17,9 +17,7 @@ website:
         file: rublog.qmd
       - text: "CV"
         file: cv.qmd
-  google-analytics: 
-    tracking-id: "G-CGMN9S98KJ"
-    storage: none
+  google-analytics: "G-CGMN9S98KJ"
 
 format:
   html:
