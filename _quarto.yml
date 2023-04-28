@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  site-url: "https://liaoyjruby.com"
+  site-url: "https://www.liaoyjruby.com"
   title: "Yi Jou (Ruby) Liao"
   favicon: kyute.png
   twitter-card:
@@ -13,10 +13,10 @@ website:
     search: false
     background: "primary"
     left:
-      - text: "Blog"
-        file: rublog.qmd
+      # - text: "Blog"
+      #   file: rublog.qmd
       - text: "CV"
-        file: cv.qmd
+        file: YiJouLiao_CV_230428.pdf
   google-analytics: "G-CGMN9S98KJ"
 
 format:
@@ -25,6 +25,8 @@ format:
         light: [flatly, theme-light.scss]
         dark: [darkly, theme-dark.scss]
     css: styles.css
+    link-external-newwindow: true
+
 
 
 
