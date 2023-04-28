@@ -107,10 +107,10 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Yi Jou (Ruby) Liao - Rublog">
-<meta property="og:image" content="https://liaoyjruby.com/posts/post-with-code/image.jpg">
+<meta property="og:image" content="https://www.liaoyjruby.com/posts/post-with-code/image.jpg">
 <meta property="og:site-name" content="Yi Jou (Ruby) Liao">
 <meta name="twitter:title" content="Yi Jou (Ruby) Liao - Rublog">
-<meta name="twitter:image" content="https://liaoyjruby.com/posts/post-with-code/image.jpg">
+<meta name="twitter:image" content="https://www.liaoyjruby.com/posts/post-with-code/image.jpg">
 <meta name="twitter:creator" content="@liaoyjruby">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -136,11 +136,7 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./rublog.html" rel="" target="" aria-current="page">
- <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv.html" rel="" target="">
+    <a class="nav-link" href="./YiJouLiao_CV_230428.pdf" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -186,7 +182,7 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1681948800000" data-listing-file-modified-sort="1682665171105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1681948800000" data-listing-file-modified-sort="1682725590040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/post-with-code/index.html"> <img src="./posts/post-with-code/image.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -227,7 +223,7 @@ Harlow Malloc
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1681689600000" data-listing-file-modified-sort="1682665171105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1681689600000" data-listing-file-modified-sort="1682725590040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/welcome/index.html"> <p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -613,6 +609,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/www\.liaoyjruby\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

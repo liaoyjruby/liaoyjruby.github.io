@@ -77,11 +77,11 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Yi Jou (Ruby) Liao - Welcome To My Blog">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://liaoyjruby.com/posts/welcome/thumbnail.jpg">
+<meta property="og:image" content="https://www.liaoyjruby.com/posts/welcome/thumbnail.jpg">
 <meta property="og:site-name" content="Yi Jou (Ruby) Liao">
 <meta name="twitter:title" content="Yi Jou (Ruby) Liao - Welcome To My Blog">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://liaoyjruby.com/posts/welcome/thumbnail.jpg">
+<meta name="twitter:image" content="https://www.liaoyjruby.com/posts/welcome/thumbnail.jpg">
 <meta name="twitter:creator" content="@liaoyjruby">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -107,11 +107,7 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../rublog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../cv.html" rel="" target="">
+    <a class="nav-link" href="../../YiJouLiao_CV_230428.pdf" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -517,6 +513,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/www\.liaoyjruby\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
