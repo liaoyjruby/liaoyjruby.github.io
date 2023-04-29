@@ -19,7 +19,7 @@ website:
         file: YiJouLiao_CV_230428.pdf
     right:
       - text: "Rubrary"
-        href: "www.liaoyjruby.com/Rubrary"
+        href: "/Rubrary"
       - text: "Projects"
         menu:
           - text: "PhyloTree SM"
