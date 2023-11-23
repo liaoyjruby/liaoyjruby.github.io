@@ -1,0 +1,8 @@
+---
+title: "Obsidian + Zotero + Drive = <3"
+author: "Yi Jou (Ruby) Liao"
+date: "2023-11-22"
+categories: [setup, guide]
+---
+
+Through trial and error, I've settled on a decent setup for using Obsidian, Zotero, and cloud storage (Google Drive) without paying into any of the cloud storage subscription plans.

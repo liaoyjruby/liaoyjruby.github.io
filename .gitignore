@@ -1,3 +1,5 @@
 /.quarto/
 /_site/
 liaoyjruby.github.io.code-workspace
+
+/.luarc.json
