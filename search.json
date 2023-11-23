@@ -7,20 +7,6 @@
     "text": "WIP"
   },
   {
-    "objectID": "rublog.html",
-    "href": "rublog.html",
-    "title": "Rublog",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 20, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -32,6 +18,27 @@
     "href": "index.html",
     "title": "Yi Jou (Ruby) Liao",
     "section": "",
-    "text": "Hi friends! :^)\nI’m currently a Computational Research Assistant at the Graeber Lab, where I’m part of a project characterizing recurrent ovarian cancers. I also assist the UCLA Metabolomics Center with quality control and exploratory data analysis of mass spectrometry metabolomics data.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. Check out my CV for more of my background.\nIn my free time, I enjoy listening to music (pop/k-pop/indie/electronic), playing video games (simulation/sandbox/story-driven), and figuring out ways to optimize my personal workflow efficiency."
+    "text": "Hi friends!\nI’m currently a Master of Science student in the Genome Science and Technology (GSAT) program at University of British Columbia (UBC) in Vancouver.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. I was a Research Assistant at the Graeber Lab, where I contributed to a project characterizing recurrent ovarian cancers and assisted with the UCLA Metabolomics Center.\nCheck out my CV or LinkedIn for more of my background.\nIn my free time, I enjoy listening to music (pop/k-pop/indie/electronic) and playing video games (simulation/sandbox/story-driven)."
+  },
+  {
+    "objectID": "rublog.html",
+    "href": "rublog.html",
+    "title": "Rublog",
+    "section": "",
+    "text": "Obsidian + Zotero + Drive = &lt;3\n\n\n\n\n\n\n\nsetup\n\n\nguide\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2023\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 20, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/obsidian-zotero-drive/index.html",
+    "href": "posts/obsidian-zotero-drive/index.html",
+    "title": "Obsidian + Zotero + Drive = <3",
+    "section": "",
+    "text": "Through trial and error, I’ve settled on a decent setup for using Obsidian, Zotero, and cloud storage (Google Drive) without paying into any of the cloud storage subscription plans."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
   }
 ]
