@@ -5,6 +5,8 @@ date: "2024-01-10"
 categories: [workflow]
 ---
 
+General overview and useful links for my digital workflow setup.
+
 # Reference manager: Zotero
 [Zotero 6 (stable)](https://www.zotero.org/download/)
 
