@@ -13,8 +13,8 @@ website:
     search: false
     background: "primary"
     left:
-      # - text: "Blog"
-      #   file: rublog.qmd
+      - text: "Blog"
+        file: rublog.qmd
       - text: "CV"
         file: YiJouLiao_CV_230428.pdf
     right:
