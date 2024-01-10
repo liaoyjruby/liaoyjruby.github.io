@@ -7,11 +7,11 @@
     "text": "WIP"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "rublog.html",
+    "href": "rublog.html",
+    "title": "Rublog",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Workflow setup\n\n\n\n\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -21,24 +21,31 @@
     "text": "Hi friends!\nI’m currently a Master of Science student in the Genome Science and Technology (GSAT) program at University of British Columbia (UBC) in Vancouver.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. I was a Research Assistant at the Graeber Lab, where I contributed to a project characterizing recurrent ovarian cancers and assisted with the UCLA Metabolomics Center.\nCheck out my CV or LinkedIn for more of my background.\nIn my free time, I enjoy listening to music (pop/k-pop/indie/electronic) and playing video games (simulation/sandbox/story-driven)."
   },
   {
-    "objectID": "rublog.html",
-    "href": "rublog.html",
-    "title": "Rublog",
+    "objectID": "posts/workflow/index.html",
+    "href": "posts/workflow/index.html",
+    "title": "Workflow setup",
     "section": "",
-    "text": "Obsidian + Zotero + Drive = &lt;3\n\n\n\n\n\n\n\nsetup\n\n\nguide\n\n\n\n\n\n\n\n\n\n\n\nNov 22, 2023\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 20, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nApr 17, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Zotero 6 (stable)\nZotero 7 (beta)\n\nUsing beta version so I can use most recent versions of Better Notes for Zotero\nPossible to have both installed on same device accessing same files, but I ran into issues with conflicting extensions so I generally only use Zotero 7\n\n\n\n\nZotero Connector Chrome extension: auto pull paper metadata and PDF from webpage\nUsing Zotero with Google Docs\nZotero Word Plugin\n\nTutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)\n\nZotero only has 300 MB cloud storage at free tier! highly recommend to set up cloud storage for references from the start\nSlightly outdated tutorial, should work okay for Zotero 6\n\n\n\n\n\nBetter BibTeX for Zotero: bibliographic data management utilities, especially useful for citekey formulas\n\nCurrent citekey formula: auth.lower + '_' + shorttitle(1,1).lower + '_' + year\n\nZotFile (Zotero 6 only): auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore\nZotero Attanger (Zotero 7): basically the auto move and rename file function from ZotFile, very new / unstable (?)\n\nStill using Zotero File but this repo is archived now…\nCurrent file renaming rule: {%a_}{%y_}{%t}\n\nBetter Notes for Zotero: improved notetaking within Zotero\nNight for Zotero 6: dark mode toggle\n\nNight for Zotero 7"
   },
   {
-    "objectID": "posts/obsidian-zotero-drive/index.html",
-    "href": "posts/obsidian-zotero-drive/index.html",
-    "title": "Obsidian + Zotero + Drive = <3",
+    "objectID": "posts/workflow/index.html#zotero-core-setup-guides",
+    "href": "posts/workflow/index.html#zotero-core-setup-guides",
+    "title": "Workflow setup",
     "section": "",
-    "text": "Through trial and error, I’ve settled on a decent setup for using Obsidian, Zotero, and cloud storage (Google Drive) without paying into any of the cloud storage subscription plans."
+    "text": "Zotero Connector Chrome extension: auto pull paper metadata and PDF from webpage\nUsing Zotero with Google Docs\nZotero Word Plugin\n\nTutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)\n\nZotero only has 300 MB cloud storage at free tier! highly recommend to set up cloud storage for references from the start\nSlightly outdated tutorial, should work okay for Zotero 6"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/workflow/index.html#zotero-extensions",
+    "href": "posts/workflow/index.html#zotero-extensions",
+    "title": "Workflow setup",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "Better BibTeX for Zotero: bibliographic data management utilities, especially useful for citekey formulas\n\nCurrent citekey formula: auth.lower + '_' + shorttitle(1,1).lower + '_' + year\n\nZotFile (Zotero 6 only): auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore\nZotero Attanger (Zotero 7): basically the auto move and rename file function from ZotFile, very new / unstable (?)\n\nStill using Zotero File but this repo is archived now…\nCurrent file renaming rule: {%a_}{%y_}{%t}\n\nBetter Notes for Zotero: improved notetaking within Zotero\nNight for Zotero 6: dark mode toggle\n\nNight for Zotero 7"
+  },
+  {
+    "objectID": "posts/workflow/index.html#obsidian-extensions-plugins",
+    "href": "posts/workflow/index.html#obsidian-extensions-plugins",
+    "title": "Workflow setup",
+    "section": "Obsidian extensions / plugins",
+    "text": "Obsidian extensions / plugins\n\n\nObsidian Git: back up entire vault to a GitHub repository\nObsidian Zotero Integration\nObsidian Pandoc Reference List"
   }
 ]

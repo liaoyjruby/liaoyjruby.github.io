@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yi Jou (Ruby) Liao">
-<meta name="dcterms.date" content="2023-11-22">
+<meta name="dcterms.date" content="2024-01-10">
 
-<title>Yi Jou (Ruby) Liao - Obsidian + Zotero + Drive = &lt;3</title>
+<title>Yi Jou (Ruby) Liao - Workflow setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,15 +74,23 @@ gtag('js', new Date());
 gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Yi Jou (Ruby) Liao - Obsidian + Zotero + Drive = <3">
+<meta property="og:title" content="Yi Jou (Ruby) Liao - Workflow setup">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://www.liaoyjruby.com/posts/workflow/ObsidianPlugins_240110.png">
 <meta property="og:site-name" content="Yi Jou (Ruby) Liao">
-<meta name="twitter:title" content="Yi Jou (Ruby) Liao - Obsidian + Zotero + Drive = <3">
+<meta property="og:image:height" content="1226">
+<meta property="og:image:width" content="2168">
+<meta name="twitter:title" content="Yi Jou (Ruby) Liao - Workflow setup">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.liaoyjruby.com/posts/workflow/ObsidianPlugins_240110.png">
 <meta name="twitter:creator" content="@liaoyjruby">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="1226">
+<meta name="twitter:image-width" content="2168">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -105,6 +113,10 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../rublog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../YiJouLiao_CV_230428.pdf" rel="" target="">
  <span class="menu-text">CV</span></a>
@@ -138,10 +150,9 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Obsidian + Zotero + Drive = &lt;3</h1>
+      <h1 class="title">Workflow setup</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">setup</div>
-                <div class="quarto-category">guide</div>
+                <div class="quarto-category">workflow</div>
               </div>
                   </div>
   </div>
@@ -159,7 +170,7 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 22, 2023</p>
+        <p class="date">January 10, 2024</p>
       </div>
     </div>
     
@@ -177,9 +188,71 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 
 
 
-<p>Through trial and error, I’ve settled on a decent setup for using Obsidian, Zotero, and cloud storage (Google Drive) without paying into any of the cloud storage subscription plans.</p>
+<section id="reference-manager-zotero" class="level1">
+<h1>Reference manager: Zotero</h1>
+<p><a href="https://www.zotero.org/download/">Zotero 6 (stable)</a></p>
+<p><a href="https://www.zotero.org/support/beta_builds">Zotero 7 (beta)</a></p>
+<ul>
+<li>Using beta version so I can use most recent versions of Better Notes for Zotero</li>
+<li>Possible to have both installed on same device accessing same files, but I ran into issues with conflicting extensions so I generally only use Zotero 7</li>
+</ul>
+<section id="zotero-core-setup-guides" class="level2">
+<h2 class="anchored" data-anchor-id="zotero-core-setup-guides">Zotero core setup &amp; guides</h2>
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Connector Chrome extension</a>: auto pull paper metadata and PDF from webpage</li>
+<li><a href="https://www.zotero.org/support/google_docs">Using Zotero with Google Docs</a></li>
+<li><a href="https://www.zotero.org/support/word_processor_plugin_usage">Zotero Word Plugin</a></li>
+</ul>
+<p><a href="https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage">Tutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)</a></p>
+<ul>
+<li>Zotero only has 300 MB cloud storage at free tier! highly recommend to set up cloud storage for references from the start</li>
+<li>Slightly outdated tutorial, should work okay for Zotero 6</li>
+</ul>
+</section>
+<section id="zotero-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="zotero-extensions">Zotero extensions</h2>
+<ul>
+<li><a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero</a>: bibliographic data management utilities, especially useful for citekey formulas
+<ul>
+<li>Current citekey formula: <code>auth.lower + '_' + shorttitle(1,1).lower + '_' + year</code></li>
+</ul></li>
+<li><a href="http://zotfile.com/">ZotFile (Zotero 6 only)</a>: auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore</li>
+<li><a href="https://github.com/MuiseDestiny/zotero-attanger">Zotero Attanger (Zotero 7)</a>: basically the auto move and rename file function from ZotFile, very new / unstable (?)
+<ul>
+<li>Still using <a href="https://github.com/lychichem/zotero-file">Zotero File</a> but this repo is archived now…</li>
+<li>Current file renaming rule: <code>{%a_}{%y_}{%t}</code></li>
+</ul></li>
+<li><a href="https://github.com/windingwind/zotero-better-notes">Better Notes for Zotero</a>: improved notetaking within Zotero</li>
+<li><a href="https://github.com/tefkah/zotero-night">Night for Zotero 6</a>: dark mode toggle
+<ul>
+<li><a href="https://github.com/tefkah/zotero-night/tree/zotero-7">Night for Zotero 7</a></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="digital-notes-brain-obsidian" class="level1">
+<h1>Digital notes &amp; brain: Obsidian</h1>
+<p><a href="https://obsidian.md/">Obsidian</a></p>
+<p>Obsidian vault is currently stored in my Google Drive / cloud and periodically backed up to GitHub repository.</p>
+<section id="obsidian-extensions-plugins" class="level2">
+<h2 class="anchored" data-anchor-id="obsidian-extensions-plugins">Obsidian extensions / plugins</h2>
+<p><img src="ObsidianPlugins_240110.png" class="img-fluid"></p>
+<ul>
+<li><a href="https://github.com/denolehov/obsidian-git">Obsidian Git</a>: back up entire vault to a GitHub repository</li>
+<li><a href="https://github.com/mgmeyers/obsidian-zotero-integration">Obsidian Zotero Integration</a></li>
+<li><a href="https://github.com/mgmeyers/obsidian-pandoc-reference-list">Obsidian Pandoc Reference List</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="miscellaneous" class="level1">
+<h1>Miscellaneous</h1>
+<p><span class="math inline">\(\LaTeX\)</span> compiler: VSCode</p>
+<p><a href="https://github.com/maxonthegit/PPspliT">PPspliT</a>: PowerPoint add-in that splits animations steps into separate slides for ease of export to PDF</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
