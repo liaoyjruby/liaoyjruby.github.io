@@ -1,6 +1,6 @@
 ---
 title: "Yi Jou (Ruby) Liao"
-image: ./imgs/bubs.jpg
+image: ./imgs/RuCoffee.png
 about:
   template: trestles
   links:
