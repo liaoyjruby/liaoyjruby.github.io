@@ -1,7 +1,7 @@
 ---
 title: "Workflow setup"
 author: "Yi Jou (Ruby) Liao"
-date: "2024-01-10"
+date: "2024-02-11"
 categories: [workflow]
 ---
 
@@ -12,7 +12,6 @@ General overview and useful links for my digital workflow setup.
 
 [Zotero 7 (beta)](https://www.zotero.org/support/beta_builds)
 
-- Using beta version so I can use most recent versions of Better Notes for Zotero
 - Possible to have both installed on same device accessing same files, but I ran into issues with conflicting extensions so I generally only use Zotero 7
 
 ## Zotero core setup & guides
@@ -23,41 +22,52 @@ General overview and useful links for my digital workflow setup.
 
 [Tutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage)
 
-- Zotero only has 300 MB cloud storage at free tier! highly recommend to set up cloud storage for references from the start
+- Zotero only has 300 MB cloud storage on its free tier! I highly recommend to set up cloud storage for storing PDFs from the start.
 - Slightly outdated tutorial, should work okay for Zotero 6
+
+Filename renaming template:
+```
+{{ firstCreator case="snake"}}{{ year suffix="_"prefix="_" }}{{ title truncate="80" case="snake"}}
+```
 
 ## Zotero extensions
 
 - [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/): bibliographic data management utilities, especially useful for citekey formulas
 	- Current citekey formula: `auth.lower + '_' + shorttitle(1,1).lower + '_' + year`
+- [Zotero Attanger (Zotero 7)](https://github.com/MuiseDestiny/zotero-attanger): basically the auto move and rename file function from ZotFile
 - [ZotFile (Zotero 6 only)](http://zotfile.com/): auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore
-- [Zotero Attanger (Zotero 7)](https://github.com/MuiseDestiny/zotero-attanger): basically the auto move and rename file function from ZotFile, very new / unstable (?)
-	- Still using [Zotero File](https://github.com/lychichem/zotero-file) but this repo is archived now...
-	- Current file renaming rule: `{%a_}{%y_}{%t}`
+    - File renaming rule: `{%a_}{%y_}{%t}`
+
+Currently not used: 
+
 - [Better Notes for Zotero](https://github.com/windingwind/zotero-better-notes): improved notetaking within Zotero
-- [Night for Zotero 6](https://github.com/tefkah/zotero-night): dark mode toggle
-	- [Night for Zotero 7](https://github.com/tefkah/zotero-night/tree/zotero-7)
+    - Export from Better Notes markdown to Zotero has been kinda wonky so sticking to base Zotero notetaking for now, which has been regularly getting updates and new features
 
 ----
 
 # Digital notes & brain: Obsidian
 [Obsidian](https://obsidian.md/)
 
-Obsidian vault is currently stored in my Google Drive / cloud and periodically backed up to GitHub repository.
+Obsidian vault is currently stored in my Google Drive / cloud storage and periodically backed up to GitHub repository.
 
 ## Obsidian extensions / plugins
 ![](ObsidianPlugins_240110.png)
 
+Highlights:
+
 - [Obsidian Git](https://github.com/denolehov/obsidian-git): back up entire vault to a GitHub repository
 - [Obsidian Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration)
+    - Easily add cite-key & citations from Zotero, import notes & metadata as templated LitNotes
 - [Obsidian Pandoc Reference List](https://github.com/mgmeyers/obsidian-pandoc-reference-list)
+- [Templater](https://github.com/SilentVoid13/Templater): template plugin that can execute JavaScript code, can automate creation of daily notes
+    - Referenced a lot of different blog posts for the current template (link here?) that I use
 
 ----
 
-
-
 # Miscellaneous
 
-$\LaTeX$ compiler: VSCode
+To-do list: Todoist
+
+$\LaTeX$ compiler: VSCode w/ LaTeX Workshop
 
 [PPspliT](https://github.com/maxonthegit/PPspliT): PowerPoint add-in that splits animations steps into separate slides for ease of export to PDF
