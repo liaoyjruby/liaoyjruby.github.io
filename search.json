@@ -46,6 +46,6 @@
     "href": "posts/workflow/index.html#obsidian-extensions-plugins",
     "title": "Workflow setup",
     "section": "Obsidian extensions / plugins",
-    "text": "Obsidian extensions / plugins\n\nHighlights:\n\nObsidian Git: back up entire vault to a GitHub repository\nObsidian Zotero Integration\n\nEasily add cite-key & citations from Zotero, import notes & metadata as templated LitNotes\n\nObsidian Pandoc Reference List\nTemplater: template plugin that can execute JavaScript code, can automate creation of daily notes\n\nReferenced a lot of different blog posts for the current template (link here?) that I use"
+    "text": "Obsidian extensions / plugins\n\nHighlights:\n\nObsidian Git: back up entire vault to a GitHub repository\nObsidian Zotero Integration\n\nEasily add cite-key & citations from Zotero, import notes & metadata as templated LitNotes\nDanny Hatcher: Zotero Obsidian Integration LitNotes overview\nAlexandra Phelan: An Updated Academic Workflow: Zotero & Obsidian\n\nObsidian Pandoc Reference List\nTemplater: template plugin that can execute JavaScript code, can automate creation of daily notes\n\nDann Berg: My Obsidian Daily Note Template"
   }
 ]
