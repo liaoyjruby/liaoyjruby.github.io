@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Yi Jou (Ruby) Liao",
-    "section": "",
-    "text": "WIP"
-  },
-  {
     "objectID": "rublog.html",
     "href": "rublog.html",
     "title": "Rublog",
     "section": "",
-    "text": "Workflow setup\n\n\n\n\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\n\nNo matching items"
+    "text": "Workflow setup\n\n\n\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\nFeb 11, 2024\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "WIP"
   },
   {
     "objectID": "index.html",
@@ -32,20 +32,20 @@
     "href": "posts/workflow/index.html#zotero-core-setup-guides",
     "title": "Workflow setup",
     "section": "Zotero core setup & guides",
-    "text": "Zotero core setup & guides\n\nZotero Connector Chrome extension: auto pull paper metadata and PDF from webpage\nUsing Zotero with Google Docs\nZotero Word Plugin\n\nTutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)\n\nZotero only has 300 MB cloud storage at free tier! highly recommend to set up cloud storage for references from the start\nSlightly outdated tutorial, should work okay for Zotero 6"
+    "text": "Zotero core setup & guides\n\nZotero Connector Chrome extension: auto pull paper metadata and PDF from webpage\nUsing Zotero with Google Docs\nZotero Word Plugin\n\nTutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)\n\nZotero only has 300 MB cloud storage on its free tier! I highly recommend to set up cloud storage for storing PDFs from the start.\nSlightly outdated tutorial, should work okay for Zotero 6\n\nFilename renaming template:\n{{ firstCreator case=\"snake\"}}{{ year suffix=\"_\"prefix=\"_\" }}{{ title truncate=\"80\" case=\"snake\"}}"
   },
   {
     "objectID": "posts/workflow/index.html#zotero-extensions",
     "href": "posts/workflow/index.html#zotero-extensions",
     "title": "Workflow setup",
     "section": "Zotero extensions",
-    "text": "Zotero extensions\n\nBetter BibTeX for Zotero: bibliographic data management utilities, especially useful for citekey formulas\n\nCurrent citekey formula: auth.lower + '_' + shorttitle(1,1).lower + '_' + year\n\nZotFile (Zotero 6 only): auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore\nZotero Attanger (Zotero 7): basically the auto move and rename file function from ZotFile, very new / unstable (?)\n\nStill using Zotero File but this repo is archived now…\nCurrent file renaming rule: {%a_}{%y_}{%t}\n\nBetter Notes for Zotero: improved notetaking within Zotero\nNight for Zotero 6: dark mode toggle\n\nNight for Zotero 7"
+    "text": "Zotero extensions\n\nBetter BibTeX for Zotero: bibliographic data management utilities, especially useful for citekey formulas\n\nCurrent citekey formula: auth.lower + '_' + shorttitle(1,1).lower + '_' + year\n\nZotero Attanger (Zotero 7): basically the auto move and rename file function from ZotFile\nZotFile (Zotero 6 only): auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore\n\nFile renaming rule: {%a_}{%y_}{%t}\n\n\nCurrently not used:\n\nBetter Notes for Zotero: improved notetaking within Zotero\n\nExport from Better Notes markdown to Zotero has been kinda wonky so sticking to base Zotero notetaking for now, which has been regularly getting updates and new features"
   },
   {
     "objectID": "posts/workflow/index.html#obsidian-extensions-plugins",
     "href": "posts/workflow/index.html#obsidian-extensions-plugins",
     "title": "Workflow setup",
     "section": "Obsidian extensions / plugins",
-    "text": "Obsidian extensions / plugins\n\n\nObsidian Git: back up entire vault to a GitHub repository\nObsidian Zotero Integration\nObsidian Pandoc Reference List"
+    "text": "Obsidian extensions / plugins\n\nHighlights:\n\nObsidian Git: back up entire vault to a GitHub repository\nObsidian Zotero Integration\n\nEasily add cite-key & citations from Zotero, import notes & metadata as templated LitNotes\n\nObsidian Pandoc Reference List\nTemplater: template plugin that can execute JavaScript code, can automate creation of daily notes\n\nReferenced a lot of different blog posts for the current template (link here?) that I use"
   }
 ]
