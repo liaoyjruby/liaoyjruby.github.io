@@ -58,9 +58,11 @@ Highlights:
 - [Obsidian Git](https://github.com/denolehov/obsidian-git): back up entire vault to a GitHub repository
 - [Obsidian Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration)
     - Easily add cite-key & citations from Zotero, import notes & metadata as templated LitNotes
+    - [Danny Hatcher: Zotero Obsidian Integration](https://www.youtube.com/watch?v=CGGeMrtyjBI) LitNotes overview
+    - [Alexandra Phelan: An Updated Academic Workflow: Zotero & Obsidian](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd)
 - [Obsidian Pandoc Reference List](https://github.com/mgmeyers/obsidian-pandoc-reference-list)
 - [Templater](https://github.com/SilentVoid13/Templater): template plugin that can execute JavaScript code, can automate creation of daily notes
-    - Referenced a lot of different blog posts for the current template (link here?) that I use
+    - [Dann Berg: My Obsidian Daily Note Template](https://dannb.org/blog/2022/obsidian-daily-note-template/)
 
 ----
 
