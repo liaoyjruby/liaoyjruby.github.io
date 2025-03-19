@@ -1,56 +1,114 @@
 ---
 title: "Workflow setup"
 author: "Yi Jou (Ruby) Liao"
-date: "2024-02-11"
+date: "2025-03-19"
 categories: [workflow]
 ---
 
-General overview and useful links for my digital workflow setup.
+General overview of my digital workflow setup.
 
 # Reference manager: Zotero
-[Zotero 6 (stable)](https://www.zotero.org/download/)
 
-[Zotero 7 (beta)](https://www.zotero.org/support/beta_builds)
+Open source citation management, paper PDF organization, integration with word processors (Microsoft Word, Google Docs).
 
-- Possible to have both installed on same device accessing same files, but I ran into issues with conflicting extensions so I generally only use Zotero 7
+[Zotero 7 download](https://www.zotero.org/download/)
 
-## Zotero core setup & guides
+- [Zotero Connector Chrome extension](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc): auto pull paper metadata and PDF from webpage into Zotero
 
-- [Zotero Connector Chrome extension](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc): auto pull paper metadata and PDF from webpage
-- [Using Zotero with Google Docs](https://www.zotero.org/support/google_docs)
-- [Zotero Word Plugin](https://www.zotero.org/support/word_processor_plugin_usage)
+- Zotero only has 300 MB cloud storage on its free tier! I highly recommend using cloud storage for PDFs and using Linked Attachments.
+    - Base directory: set to path to directory in cloud storage
+        - Ex. `C:\Users\yliao\OneDrive - UBC\Zotero`
+    - Data directory: leave as default!
+        - Ex. `C:\Users\yliao\Zotero`
 
-[Tutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage)
-
-- Zotero only has 300 MB cloud storage on its free tier! I highly recommend to set up cloud storage for storing PDFs from the start.
-- Slightly outdated tutorial, should work okay for Zotero 6
-
-Filename renaming template:
+Filename Format template:
 ```
 {{ firstCreator case="snake"}}{{ year suffix="_"prefix="_" }}{{ title truncate="80" case="snake"}}
 ```
 
-## Zotero extensions
+Windows OS: If Zotero 7 doesn't launch, turn on Windows 8 compatibility mode
 
+- Find `zotero.exe` (default is `"C:\Program Files\Zotero\zotero.exe"`), and right click into "Properties"
+- Go to "Compatibility" tab, check "Run this program in compatibility mode for:" and make sure "Windows 8" is selected in drop-down menu
+
+![](Zot7_compatibility.png)
+
+**Extensions**
+
+- [Zotero Attanger](https://github.com/MuiseDestiny/zotero-attanger): auto-move and organize files
 - [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/): bibliographic data management utilities, especially useful for citekey formulas
 	- Current citekey formula: `auth.lower + '_' + shorttitle(1,1).lower + '_' + year`
-- [Zotero Attanger (Zotero 7)](https://github.com/MuiseDestiny/zotero-attanger): basically the auto move and rename file function from ZotFile
-- [ZotFile (Zotero 6 only)](http://zotfile.com/): auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore
-    - File renaming rule: `{%a_}{%y_}{%t}`
 
-Currently not used: 
+**Guides**
 
-- [Better Notes for Zotero](https://github.com/windingwind/zotero-better-notes): improved notetaking within Zotero
-    - Export from Better Notes markdown to Zotero has been kinda wonky so sticking to base Zotero notetaking for now, which has been regularly getting updates and new features
+- [Using Zotero with Google Docs](https://www.zotero.org/support/google_docs)
+- [Zotero Word Plugin](https://www.zotero.org/support/word_processor_plugin_usage)
 
 ----
 
-# Digital notes & brain: Obsidian
-[Obsidian](https://obsidian.md/)
+# General IDE: VSCode
 
-Obsidian vault is currently stored in my Google Drive / cloud storage and periodically backed up to GitHub repository.
+[VSCode download](https://code.visualstudio.com/download)
 
-## Obsidian extensions / plugins
+**Extensions**
+
+- [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+- [Gremlins tracker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nhoizey.gremlins): reveals invisible characters and non-standard characters
+- [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf): display PDF files
+
+## Running R in VSCode
+
+[R in Visual Studio Code](https://code.visualstudio.com/docs/languages/r)
+- Set R *path* setting to R executable path (ex. `/usr/local/bin/R`)
+
+- [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
+- [radian](https://github.com/randy3k/radian): alternative R console with syntax highlighting and multiline editing
+    - Set bracketed paste to `true`
+    - Set R *terminal* to radian path (ex. `/home/yliao/miniforge3/bin/radian`)
+    - If `CTRL+Enter` keeps creating a new R Interactive session, can try turning "Always Use Active Terminal" off
+- [R Debugger](https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger)
+
+[vscode-R: Interacting with R terminals](https://github.com/REditorSupport/vscode-R/wiki/Interacting-with-R-terminals)
+
+For self-managed R terminals, add these lines to `~/.Rprofile`:
+```{r}
+if (interactive() && Sys.getenv("RSTUDIO") == "") {
+  Sys.setenv(TERM_PROGRAM = "vscode")
+  source(file.path(Sys.getenv(
+    if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME"
+  ), ".vscode-R", "init.R"))
+}
+```
+
+Snippet of R VSCode settings (JSON)
+```{json}
+  "r.plot.useHttpgd": true,
+  "r.lsp.diagnostics": false,
+  "r.alwaysUseActiveTerminal": true,
+  "r.rterm.windows": "C:\\Users\\yliao\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\radian.exe",
+  "r.rpath.windows": "C:\\Program Files\\R\\R-4.3.2\\bin\\R.exe",
+  "r.rpath.linux": "/usr/local/bin/R",
+  "r.rterm.linux": "/home/yliao/miniforge3/bin/radian",
+  "r.removeLeadingComments": true,
+  "r.session.levelOfObjectDetail": "Normal",
+  "r.bracketedPaste": true,
+```
+
+**$\LaTeX$ in VSCode**
+
+- [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+
+----
+
+# Digital brain: Obsidian
+
+[Obsidian download](https://obsidian.md/download)
+
+Markdown-based note-taking.
+
+My Obsidian vault is currently stored in 1TB UBC OneDrive and periodically backed up to GitHub repository.
+
+**Extensions**
 ![](ObsidianPlugins_240110.png)
 
 Highlights:
@@ -68,8 +126,6 @@ Highlights:
 
 # Miscellaneous
 
-To-do list: Todoist
-
-$\LaTeX$ compiler: VSCode w/ LaTeX Workshop
+To-do list: [Todoist](https://www.todoist.com/) (free tier!)
 
 [PPspliT](https://github.com/maxonthegit/PPspliT): PowerPoint add-in that splits animations steps into separate slides for ease of export to PDF
