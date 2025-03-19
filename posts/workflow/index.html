@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yi Jou (Ruby) Liao">
-<meta name="dcterms.date" content="2024-02-11">
+<meta name="dcterms.date" content="2025-03-19">
 
 <title>Workflow setup – Yi Jou (Ruby) Liao</title>
 <style>
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -38,12 +72,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-4480650f80bb1515086246e4fb4ff267.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-7fca9bc3ca8ad7e0538dbaa97fda4f17.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a421d00c4af9dc2bfc71eee307835d5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-445075dfac558c8ed62ee3d143e5b293.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,16 +148,16 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Workflow setup – Yi Jou (Ruby) Liao">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://www.liaoyjruby.com/posts/workflow/ObsidianPlugins_240110.png">
+<meta property="og:image" content="https://www.liaoyjruby.com/posts/workflow/Zot7_compatibility.png">
 <meta property="og:site_name" content="Yi Jou (Ruby) Liao">
-<meta property="og:image:height" content="1226">
-<meta property="og:image:width" content="2168">
+<meta property="og:image:height" content="259">
+<meta property="og:image:width" content="410">
 <meta name="twitter:title" content="Workflow setup – Yi Jou (Ruby) Liao">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://www.liaoyjruby.com/posts/workflow/ObsidianPlugins_240110.png">
+<meta name="twitter:image" content="https://www.liaoyjruby.com/posts/workflow/Zot7_compatibility.png">
 <meta name="twitter:creator" content="@liaoyjruby">
-<meta name="twitter:image-height" content="1226">
-<meta name="twitter:image-width" content="2168">
+<meta name="twitter:image-height" content="259">
+<meta name="twitter:image-width" content="410">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -203,7 +237,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 11, 2024</p>
+        <p class="date">March 19, 2025</p>
       </div>
     </div>
     
@@ -222,59 +256,106 @@ window.Quarto = {
 
 
 
-<p>General overview and useful links for my digital workflow setup.</p>
+<p>General overview of my digital workflow setup.</p>
 <section id="reference-manager-zotero" class="level1">
 <h1>Reference manager: Zotero</h1>
-<p><a href="https://www.zotero.org/download/">Zotero 6 (stable)</a></p>
-<p><a href="https://www.zotero.org/support/beta_builds">Zotero 7 (beta)</a></p>
+<p>Open source citation management, paper PDF organization, integration with word processors (Microsoft Word, Google Docs).</p>
+<p><a href="https://www.zotero.org/download/">Zotero 7 download</a></p>
 <ul>
-<li>Possible to have both installed on same device accessing same files, but I ran into issues with conflicting extensions so I generally only use Zotero 7</li>
-</ul>
-<section id="zotero-core-setup-guides" class="level2">
-<h2 class="anchored" data-anchor-id="zotero-core-setup-guides">Zotero core setup &amp; guides</h2>
+<li><p><a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Connector Chrome extension</a>: auto pull paper metadata and PDF from webpage into Zotero</p></li>
+<li><p>Zotero only has 300 MB cloud storage on its free tier! I highly recommend using cloud storage for PDFs and using Linked Attachments.</p>
 <ul>
-<li><a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Connector Chrome extension</a>: auto pull paper metadata and PDF from webpage</li>
-<li><a href="https://www.zotero.org/support/google_docs">Using Zotero with Google Docs</a></li>
-<li><a href="https://www.zotero.org/support/word_processor_plugin_usage">Zotero Word Plugin</a></li>
-</ul>
-<p><a href="https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage">Tutorial: The Best Reference Manager Setup (Zotero + ZotFile + Cloud Storage)</a></p>
+<li>Base directory: set to path to directory in cloud storage
 <ul>
-<li>Zotero only has 300 MB cloud storage on its free tier! I highly recommend to set up cloud storage for storing PDFs from the start.</li>
-<li>Slightly outdated tutorial, should work okay for Zotero 6</li>
+<li>Ex. <code>C:\Users\yliao\OneDrive - UBC\Zotero</code></li>
+</ul></li>
+<li>Data directory: leave as default!
+<ul>
+<li>Ex. <code>C:\Users\yliao\Zotero</code></li>
+</ul></li>
+</ul></li>
 </ul>
-<p>Filename renaming template:</p>
+<p>Filename Format template:</p>
 <pre><code>{{ firstCreator case="snake"}}{{ year suffix="_"prefix="_" }}{{ title truncate="80" case="snake"}}</code></pre>
-</section>
-<section id="zotero-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="zotero-extensions">Zotero extensions</h2>
+<p>Windows OS: If Zotero 7 doesn’t launch, turn on Windows 8 compatibility mode</p>
 <ul>
+<li>Find <code>zotero.exe</code> (default is <code>"C:\Program Files\Zotero\zotero.exe"</code>), and right click into “Properties”</li>
+<li>Go to “Compatibility” tab, check “Run this program in compatibility mode for:” and make sure “Windows 8” is selected in drop-down menu</li>
+</ul>
+<p><img src="Zot7_compatibility.png" class="img-fluid"></p>
+<p><strong>Extensions</strong></p>
+<ul>
+<li><a href="https://github.com/MuiseDestiny/zotero-attanger">Zotero Attanger</a>: auto-move and organize files</li>
 <li><a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX for Zotero</a>: bibliographic data management utilities, especially useful for citekey formulas
 <ul>
 <li>Current citekey formula: <code>auth.lower + '_' + shorttitle(1,1).lower + '_' + year</code></li>
 </ul></li>
-<li><a href="https://github.com/MuiseDestiny/zotero-attanger">Zotero Attanger (Zotero 7)</a>: basically the auto move and rename file function from ZotFile</li>
-<li><a href="http://zotfile.com/">ZotFile (Zotero 6 only)</a>: auto move and rename file, send / retrieve PDF from tablet (a bit finnicky), not maintained anymore
-<ul>
-<li>File renaming rule: <code>{%a_}{%y_}{%t}</code></li>
-</ul></li>
 </ul>
-<p>Currently not used:</p>
+<p><strong>Guides</strong></p>
 <ul>
-<li><a href="https://github.com/windingwind/zotero-better-notes">Better Notes for Zotero</a>: improved notetaking within Zotero
+<li><a href="https://www.zotero.org/support/google_docs">Using Zotero with Google Docs</a></li>
+<li><a href="https://www.zotero.org/support/word_processor_plugin_usage">Zotero Word Plugin</a></li>
+</ul>
+<hr>
+</section>
+<section id="vscode" class="level1">
+<h1>VSCode</h1>
+<p><a href="https://code.visualstudio.com/download">VSCode download</a></p>
+<p><strong>Extensions</strong></p>
 <ul>
-<li>Export from Better Notes markdown to Zotero has been kinda wonky so sticking to base Zotero notetaking for now, which has been regularly getting updates and new features</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote - SSH</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=nhoizey.gremlins">Gremlins tracker for Visual Studio Code</a>: reveals invisible characters and non-standard characters</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf">vscode-pdf</a>: display PDF files</li>
+</ul>
+<section id="running-r-in-vscode" class="level2">
+<h2 class="anchored" data-anchor-id="running-r-in-vscode">Running R in VSCode</h2>
+<p><a href="https://code.visualstudio.com/docs/languages/r">R in Visual Studio Code</a> - Set R <em>path</em> setting to R executable path (ex. <code>/usr/local/bin/R</code>)</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">R extension</a></li>
+<li><a href="https://github.com/randy3k/radian">radian</a>: alternative R console with syntax highlighting and multiline editing
+<ul>
+<li>Set bracketed paste to <code>true</code></li>
+<li>Set R <em>terminal</em> to radian path (ex. <code>/home/yliao/miniforge3/bin/radian</code>)</li>
+<li>If <code>CTRL+Enter</code> keeps creating a new R Interactive session, can try turning “Always Use Active Terminal” off</li>
 </ul></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger">R Debugger extension</a></li>
+</ul>
+<p><a href="https://github.com/REditorSupport/vscode-R/wiki/Interacting-with-R-terminals">vscode-R: Interacting with R terminals</a></p>
+<p>For self-managed R terminals, add these lines to <code>~/.Rprofile</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">interactive</span>() <span class="sc">&amp;&amp;</span> <span class="fu">Sys.getenv</span>(<span class="st">"RSTUDIO"</span>) <span class="sc">==</span> <span class="st">""</span>) {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sys.setenv</span>(<span class="at">TERM_PROGRAM =</span> <span class="st">"vscode"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">source</span>(<span class="fu">file.path</span>(<span class="fu">Sys.getenv</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (.Platform<span class="sc">$</span>OS.type <span class="sc">==</span> <span class="st">"windows"</span>) <span class="st">"USERPROFILE"</span> <span class="cf">else</span> <span class="st">"HOME"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  ), <span class="st">".vscode-R"</span>, <span class="st">"init.R"</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Snippet of R VSCode settings (JSON)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.plot.useHttpgd":</span> <span class="er">true,</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.lsp.diagnostics":</span> <span class="er">false,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.alwaysUseActiveTerminal":</span> <span class="er">true,</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rterm.windows":</span> <span class="er">"C:\\Users\\yliao\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\radian.exe",</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rpath.windows":</span> <span class="er">"C:\\Program</span> <span class="er">Files\\R\\R-4.3.2\\bin\\R.exe",</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rpath.linux":</span> <span class="er">"/usr/local/bin/R",</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rterm.linux":</span> <span class="er">"/home/yliao/miniforge3/bin/radian",</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.removeLeadingComments":</span> <span class="er">true,</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.session.levelOfObjectDetail":</span> <span class="er">"Normal",</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.bracketedPaste":</span> <span class="er">true,</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong><span class="math inline">\(\LaTeX\)</span> in VSCode</strong></p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop</a></li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="digital-notes-brain-obsidian" class="level1">
-<h1>Digital notes &amp; brain: Obsidian</h1>
-<p><a href="https://obsidian.md/">Obsidian</a></p>
-<p>Obsidian vault is currently stored in my Google Drive / cloud storage and periodically backed up to GitHub repository.</p>
-<section id="obsidian-extensions-plugins" class="level2">
-<h2 class="anchored" data-anchor-id="obsidian-extensions-plugins">Obsidian extensions / plugins</h2>
-<p><img src="ObsidianPlugins_240110.png" class="img-fluid"></p>
+<section id="digital-brain-obsidian" class="level1">
+<h1>Digital brain: Obsidian</h1>
+<p><a href="https://obsidian.md/download">Obsidian download</a></p>
+<p>Markdown-based note-taking.</p>
+<p>My Obsidian vault is currently stored in 1TB UBC OneDrive and periodically backed up to GitHub repository.</p>
+<p><strong>Extensions</strong> <img src="ObsidianPlugins_240110.png" class="img-fluid"></p>
 <p>Highlights:</p>
 <ul>
 <li><a href="https://github.com/denolehov/obsidian-git">Obsidian Git</a>: back up entire vault to a GitHub repository</li>
@@ -292,11 +373,9 @@ window.Quarto = {
 </ul>
 <hr>
 </section>
-</section>
 <section id="miscellaneous" class="level1">
 <h1>Miscellaneous</h1>
-<p>To-do list: Todoist</p>
-<p><span class="math inline">\(\LaTeX\)</span> compiler: VSCode w/ LaTeX Workshop</p>
+<p>To-do list: <a href="https://www.todoist.com/">Todoist</a> (free tier!)</p>
 <p><a href="https://github.com/maxonthegit/PPspliT">PPspliT</a>: PowerPoint add-in that splits animations steps into separate slides for ease of export to PDF</p>
 
 
