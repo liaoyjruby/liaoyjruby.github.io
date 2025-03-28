@@ -124,6 +124,14 @@ Highlights:
 
 ----
 
+# SSHFS-Win
+
+- [WinFsp](https://github.com/winfsp/winfsp/releases/tag/v2.0)
+- [SSHFS-Win](https://github.com/winfsp/sshfs-win)
+- [SSHFS-Win Manager](https://github.com/evsar3/sshfs-win-manager) - GUI interface for SSHFS-Win
+
+----
+
 # Miscellaneous
 
 To-do list: [Todoist](https://www.todoist.com/) (free tier!)
