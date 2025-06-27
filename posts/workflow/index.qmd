@@ -1,7 +1,7 @@
 ---
 title: "Workflow setup"
 author: "Yi Jou (Ruby) Liao"
-date: "2025-03-19"
+date: "2025-06-27"
 categories: [workflow]
 ---
 
@@ -38,6 +38,15 @@ Windows OS: If Zotero 7 doesn't launch, turn on Windows 8 compatibility mode
 - [Zotero Attanger](https://github.com/MuiseDestiny/zotero-attanger): auto-move and organize files
 - [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/): bibliographic data management utilities, especially useful for citekey formulas
 	- Current citekey formula: `auth.lower + '_' + shorttitle(1,1).lower + '_' + year`
+
+To install extensions from file: 
+
+- Download the `.xpi` file
+- Within Zotero go to Tools > Plugins
+- Click the gear icon to the right of "Manage Your Plugins" > Install Plugin From File...
+
+![](Zot7_plugin_1.png)
+![](Zot7_plugin_2.png)
 
 **Guides**
 
