@@ -1,7 +1,7 @@
 ---
 title: "Workflow setup"
 author: "Yi Jou (Ruby) Liao"
-date: "2025-06-27"
+date: "2025-07-05"
 categories: [workflow]
 ---
 
@@ -38,6 +38,7 @@ Windows OS: If Zotero 7 doesn't launch, turn on Windows 8 compatibility mode
 - [Zotero Attanger](https://github.com/MuiseDestiny/zotero-attanger): auto-move and organize files
 - [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/): bibliographic data management utilities, especially useful for citekey formulas
 	- Current citekey formula: `auth.lower + '_' + shorttitle(1,1).lower + '_' + year`
+- [Linter for Zotero](https://github.com/northword/zotero-format-metadata): mainly for the tool to standardize dates to ISO format
 
 To install extensions from file: 
 
