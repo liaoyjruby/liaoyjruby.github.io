@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "rublog.html",
+    "href": "rublog.html",
+    "title": "Rublog",
+    "section": "",
+    "text": "Workflow setup\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yi Jou (Ruby) Liao",
+    "section": "",
+    "text": "Hi friends!\nI’m currently a PhD student in the Wyatt Lab at the Vancouver Prostate Centre studying prostate cancer genomics, as part of the University of British Columbia (UBC) Genome Science and Technology (GSAT) program.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. I was a Research Assistant at the Graeber Lab, where I contributed to a project characterizing recurrent ovarian cancers and assisted with the UCLA Metabolomics Center.\nCheck out my CV or LinkedIn for more of my background.\nIn my free time, I enjoy listening to music (indie/alt/pop/k-pop/electronic) and playing video games (simulation/sandbox/story-driven)."
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "Curriculum Vitae",
@@ -19,19 +33,5 @@
     "title": "Workflow setup",
     "section": "Running R in VSCode",
     "text": "Running R in VSCode\nR in Visual Studio Code - Set R path setting to R executable path (ex. /usr/local/bin/R)\n\nR extension\nradian: alternative R console with syntax highlighting and multiline editing\n\nSet bracketed paste to true\nSet R terminal to radian path (ex. /home/yliao/miniforge3/bin/radian)\nIf CTRL+Enter keeps creating a new R Interactive session, can try turning “Always Use Active Terminal” off\n\nR Debugger\n\nvscode-R: Interacting with R terminals\nFor self-managed R terminals, add these lines to ~/.Rprofile:\n\nif (interactive() && Sys.getenv(\"RSTUDIO\") == \"\") {\n  Sys.setenv(TERM_PROGRAM = \"vscode\")\n  source(file.path(Sys.getenv(\n    if (.Platform$OS.type == \"windows\") \"USERPROFILE\" else \"HOME\"\n  ), \".vscode-R\", \"init.R\"))\n}\n\nSnippet of R VSCode settings (JSON)\n\n  \"r.plot.useHttpgd\": true,\n  \"r.lsp.diagnostics\": false,\n  \"r.alwaysUseActiveTerminal\": true,\n  \"r.rterm.windows\": \"C:\\\\Users\\\\yliao\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\Scripts\\\\radian.exe\",\n  \"r.rpath.windows\": \"C:\\\\Program Files\\\\R\\\\R-4.3.2\\\\bin\\\\R.exe\",\n  \"r.rpath.linux\": \"/usr/local/bin/R\",\n  \"r.rterm.linux\": \"/home/yliao/miniforge3/bin/radian\",\n  \"r.removeLeadingComments\": true,\n  \"r.session.levelOfObjectDetail\": \"Normal\",\n  \"r.bracketedPaste\": true,\n\n\\(\\LaTeX\\) in VSCode\n\nLaTeX Workshop"
-  },
-  {
-    "objectID": "rublog.html",
-    "href": "rublog.html",
-    "title": "Rublog",
-    "section": "",
-    "text": "Workflow setup\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Yi Jou (Ruby) Liao",
-    "section": "",
-    "text": "Hi friends!\nI’m currently a PhD student in the Wyatt Lab at the Vancouver Prostate Centre studying prostate cancer genomics, as part of the University of British Columbia (UBC) Genome Science and Technology (GSAT) program.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. I was a Research Assistant at the Graeber Lab, where I contributed to a project characterizing recurrent ovarian cancers and assisted with the UCLA Metabolomics Center.\nCheck out my CV or LinkedIn for more of my background.\nIn my free time, I enjoy listening to music (indie/alt/pop/k-pop/electronic) and playing video games (simulation/sandbox/story-driven)."
   }
 ]
