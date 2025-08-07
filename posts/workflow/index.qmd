@@ -60,7 +60,7 @@ To install extensions from file:
 
 [VSCode download](https://code.visualstudio.com/download)
 
-- [V1.98 download](https://code.visualstudio.com/updates/v1_98): for the VPC Linux server, it runs a relatively old OS that is not supported by recent VSCode versions - this is the last version that supports Remote SSH!
+- [V1.98 download](https://code.visualstudio.com/updates/v1_98): the VPC Linux server runs an old Linux OS that is not supported by recent VSCode versions - this is the last version that supports Remote SSH! Make sure to AGGRESSIVELY turn off VSCode auto-update in settings before downgrading to V1.98!
 
 **Extensions**
 
