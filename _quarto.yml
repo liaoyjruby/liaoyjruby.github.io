@@ -16,14 +16,14 @@ website:
       - text: "Blog"
         file: rublog.qmd
       - text: "CV"
-        file: YiJouLiao_CV_230428.pdf
-    right:
-      - text: "Rubrary"
-        href: "/Rubrary"
-      - text: "Projects"
-        menu:
-          - text: "PhyloTree SM"
-            href: "https://github.com/liaoyjruby/PhyloTree_SM"
+        file: YiJouLiao_CV_2405.pdf
+    # right:
+    #   - text: "Rubrary"
+    #     href: "/Rubrary"
+    #   - text: "Projects"
+    #     menu:
+    #       - text: "PhyloTree SM"
+    #         href: "https://github.com/liaoyjruby/PhyloTree_SM"
   google-analytics: "G-CGMN9S98KJ"
 
 format:

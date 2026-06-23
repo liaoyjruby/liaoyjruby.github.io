@@ -1,17 +1,21 @@
 ---
 title: "Workflow setup"
 author: "Yi Jou (Ruby) Liao"
-date: "2025-07-05"
+date: "2026-06-23"
 categories: [workflow]
+resources:
+  - "_templates/"
+toc: true
+toc-depth: 2
 ---
 
-General overview of my digital workflow setup.
+General overview of my digital workflow setup. Ocassionally updated.
 
 # Reference manager: Zotero
 
 Open source citation management, paper PDF organization, integration with word processors (Microsoft Word, Google Docs).
 
-[Zotero 7 download](https://www.zotero.org/download/)
+[Zotero download](https://www.zotero.org/download/)
 
 - [Zotero Connector Chrome extension](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc): auto pull paper metadata and PDF from webpage into Zotero
 
@@ -118,21 +122,49 @@ Snippet of R VSCode settings (JSON)
 
 Markdown-based note-taking.
 
-My Obsidian vault is currently stored in 1TB UBC OneDrive and periodically backed up to GitHub repository.
+My Obsidian vault is currently stored in 100GB Google Drive (paid plan...) and periodically backed up to GitHub repository.
 
-**Extensions**
-![](ObsidianPlugins_240110.png)
+## Community plugins
 
-Highlights:
+Core:
 
-- [Obsidian Git](https://github.com/denolehov/obsidian-git): back up entire vault to a GitHub repository
-- [Obsidian Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration)
-    - Easily add cite-key & citations from Zotero, import notes & metadata as templated LitNotes
-    - [Danny Hatcher: Zotero Obsidian Integration](https://www.youtube.com/watch?v=CGGeMrtyjBI) LitNotes overview
-    - [Alexandra Phelan: An Updated Academic Workflow: Zotero & Obsidian](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd)
-- [Obsidian Pandoc Reference List](https://github.com/mgmeyers/obsidian-pandoc-reference-list)
-- [Templater](https://github.com/SilentVoid13/Templater): template plugin that can execute JavaScript code, can automate creation of daily notes
+- [Dataview](https://github.com/blacksmithgu/obsidian-dataview): enable data index and query for MD files
+- [Git](https://github.com/denolehov/obsidian-git): back up entire vault to a GitHub repository
+  - I only run Git sync on my laptop to prevent weird conflict issues across multiple devices - there is a "Disable on this device" setting.
+- [Templater](https://github.com/silentvoid13/Templater): template plugin that can execute JavaScript code, can automate creation of daily notes
     - [Dann Berg: My Obsidian Daily Note Template](https://dannb.org/blog/2022/obsidian-daily-note-template/)
+
+Zotero:
+
+- [Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration): add cite-key & citations from Zotero, import notes & metadata as templated LitNotes
+  - [Danny Hatcher: Zotero Obsidian Integration](https://www.youtube.com/watch?v=CGGeMrtyjBI) LitNotes overview
+  - [Alexandra Phelan: An Updated Academic Workflow: Zotero & Obsidian](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd)
+- [Pandoc Reference List](https://github.com/obsidian-community/obsidian-pandoc-reference-list): display a formatted reference in Obsidian's sidebar for each pandoc citekey in the active document
+
+Functionality:
+
+- [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian): improved table manipulation
+- [Extended MathJax](https://github.com/wei2912/obsidian-latex): extends MathJax LaTeX support
+- [File Cleaner Redux](https://github.com/husjon/obsidian-file-cleaner-redux): helper to remove unused/empty MD files and attachments
+- [Better Word Count](https://github.com/lukeleppan/better-word-count): counts words of selected text in editor
+
+Import/Export:
+
+- [Excel to Markdown Table](https://github.com/ganesshkumar/obsidian-excel-to-markdown-table): paste tables from Excel/Sheets as MD tables
+- [Markdown Export](https://github.com/bingryan/obsidian-markdown-export-plugin): export directory/single MD (including pictures) to a folder
+
+## Templates
+
+- <a href="templates/Daily%20Template.md" target="_blank" download>Daily Template</a>
+- <a href="templates/LitNote%20Manual.md" target="_blank" download>LitNote</a>
+  - <a href="templates/LitNote%20Manual%20ClinTrial.md" target="_blank" download>LitNote: Clinical Trial</a>
+  - <a href="templates/LitNote%20Manual%20Reviews.md" target="_blank" download>LitNote: Reviews</a>
+
+The `Daily notes` Core plugin automatically places new file locations in my `/Daily` folder under custom format `YYYY/YYYY-MM/YYYY-MM-DD-ddd`.
+
+For LitNotes, I use Templater to automatically apply these templates depending on the folder that the note is created in.
+
+![](Templater.png)
 
 ----
 
