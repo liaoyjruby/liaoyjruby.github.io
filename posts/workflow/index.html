@@ -2,15 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yi Jou (Ruby) Liao">
-<meta name="dcterms.date" content="2025-07-05">
+<meta name="dcterms.date" content="2026-06-23">
 
 <title>Workflow setup – Yi Jou (Ruby) Liao</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -74,14 +77,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7d9bf6d8e1ab05630e8825f32a0e36e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-cb17f3ef60d731726dcdcd417033ee31.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-7d9bf6d8e1ab05630e8825f32a0e36e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-66f054a54b2caf199c6016047462a1f3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7f5757a6c2860ecd862fe89dcd7e2eec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-66f054a54b2caf199c6016047462a1f3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,7 +123,7 @@ gtag('config', 'G-CGMN9S98KJ', { 'anonymize_ip': true});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -133,7 +136,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -165,7 +168,7 @@ window.Quarto = {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -335,7 +338,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../kyute.png" alt="" class="navbar-logo">
+    <img src="../../kyute.png" alt="" class="navbar-logo light-content">
+    <img src="../../kyute.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Yi Jou (Ruby) Liao</span>
@@ -351,26 +355,9 @@ window.Quarto = {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../YiJouLiao_CV_230428.pdf"> 
+    <a class="nav-link" href="../../YiJouLiao_CV_2405.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../Rubrary"> 
-<span class="menu-text">Rubrary</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Projects</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="https://github.com/liaoyjruby/PhyloTree_SM">
- <span class="dropdown-text">PhyloTree SM</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -403,7 +390,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 5, 2025</p>
+        <p class="date">June 23, 2026</p>
       </div>
     </div>
     
@@ -414,7 +401,26 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#reference-manager-zotero" id="toc-reference-manager-zotero" class="nav-link active" data-scroll-target="#reference-manager-zotero">Reference manager: Zotero</a></li>
+  <li><a href="#general-ide-vscode" id="toc-general-ide-vscode" class="nav-link" data-scroll-target="#general-ide-vscode">General IDE: VSCode</a>
+  <ul class="collapse">
+  <li><a href="#running-r-in-vscode" id="toc-running-r-in-vscode" class="nav-link" data-scroll-target="#running-r-in-vscode">Running R in VSCode</a></li>
+  </ul></li>
+  <li><a href="#digital-brain-obsidian" id="toc-digital-brain-obsidian" class="nav-link" data-scroll-target="#digital-brain-obsidian">Digital brain: Obsidian</a>
+  <ul class="collapse">
+  <li><a href="#community-plugins" id="toc-community-plugins" class="nav-link" data-scroll-target="#community-plugins">Community plugins</a></li>
+  <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates">Templates</a></li>
+  </ul></li>
+  <li><a href="#sshfs-win" id="toc-sshfs-win" class="nav-link" data-scroll-target="#sshfs-win">SSHFS-Win</a></li>
+  <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous">Miscellaneous</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -427,7 +433,7 @@ window.Quarto = {
 <section id="reference-manager-zotero" class="level1">
 <h1>Reference manager: Zotero</h1>
 <p>Open source citation management, paper PDF organization, integration with word processors (Microsoft Word, Google Docs).</p>
-<p><a href="https://www.zotero.org/download/">Zotero 7 download</a></p>
+<p><a href="https://www.zotero.org/download/">Zotero download</a></p>
 <ul>
 <li><p><a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">Zotero Connector Chrome extension</a>: auto pull paper metadata and PDF from webpage into Zotero</p></li>
 <li><p>Zotero only has 300 MB cloud storage on its free tier! I highly recommend using cloud storage for PDFs and using Linked Attachments.</p>
@@ -477,7 +483,7 @@ window.Quarto = {
 <h1>General IDE: VSCode</h1>
 <p><a href="https://code.visualstudio.com/download">VSCode download</a></p>
 <ul>
-<li><a href="https://code.visualstudio.com/updates/v1_98">V1.98 download</a>: the VPC Linux server runs an old Linux OS that is not supported by recent VSCode versions - this is the last version that supports Remote SSH! Make sure to AGGRESSIVELY turn off VSCode auto-update before downgrading to V1.98!</li>
+<li><a href="https://code.visualstudio.com/updates/v1_98">V1.98 download</a>: the VPC Linux server runs an old Linux OS that is not supported by recent VSCode versions - this is the last version that supports Remote SSH! Make sure to AGGRESSIVELY turn off VSCode auto-update in settings before downgrading to V1.98!</li>
 </ul>
 <p><strong>Extensions</strong></p>
 <ul>
@@ -501,25 +507,25 @@ window.Quarto = {
 <p><a href="https://github.com/REditorSupport/vscode-R/wiki/Interacting-with-R-terminals">vscode-R: Interacting with R terminals</a></p>
 <p>For self-managed R terminals, add these lines to <code>~/.Rprofile</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">interactive</span>() <span class="sc">&amp;&amp;</span> <span class="fu">Sys.getenv</span>(<span class="st">"RSTUDIO"</span>) <span class="sc">==</span> <span class="st">""</span>) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">interactive</span>() <span class="sc">&amp;&amp;</span> <span class="fu">Sys.getenv</span>(<span class="st">"RSTUDIO"</span>) <span class="sc">==</span> <span class="st">""</span>) {</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sys.setenv</span>(<span class="at">TERM_PROGRAM =</span> <span class="st">"vscode"</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">source</span>(<span class="fu">file.path</span>(<span class="fu">Sys.getenv</span>(</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (.Platform<span class="sc">$</span>OS.type <span class="sc">==</span> <span class="st">"windows"</span>) <span class="st">"USERPROFILE"</span> <span class="cf">else</span> <span class="st">"HOME"</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  ), <span class="st">".vscode-R"</span>, <span class="st">"init.R"</span>))</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Snippet of R VSCode settings (JSON)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.plot.useHttpgd":</span> <span class="er">true,</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.lsp.diagnostics":</span> <span class="er">false,</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.alwaysUseActiveTerminal":</span> <span class="er">true,</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rterm.windows":</span> <span class="er">"C:\\Users\\yliao\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\radian.exe",</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rpath.windows":</span> <span class="er">"C:\\Program</span> <span class="er">Files\\R\\R-4.3.2\\bin\\R.exe",</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rpath.linux":</span> <span class="er">"/usr/local/bin/R",</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.rterm.linux":</span> <span class="er">"/home/yliao/miniforge3/bin/radian",</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.removeLeadingComments":</span> <span class="er">true,</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.session.levelOfObjectDetail":</span> <span class="er">"Normal",</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="er">"r.bracketedPaste":</span> <span class="er">true,</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.plot.useHttpgd"</span><span class="er">:</span> <span class="kw">true</span><span class="er">,</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.lsp.diagnostics"</span><span class="er">:</span> <span class="kw">false</span><span class="er">,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.alwaysUseActiveTerminal"</span><span class="er">:</span> <span class="kw">true</span><span class="er">,</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.rterm.windows"</span><span class="er">:</span> <span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">yliao</span><span class="ch">\\</span><span class="st">AppData</span><span class="ch">\\</span><span class="st">Local</span><span class="ch">\\</span><span class="st">Programs</span><span class="ch">\\</span><span class="st">Python</span><span class="ch">\\</span><span class="st">Python312</span><span class="ch">\\</span><span class="st">Scripts</span><span class="ch">\\</span><span class="st">radian.exe"</span><span class="er">,</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.rpath.windows"</span><span class="er">:</span> <span class="st">"C:</span><span class="ch">\\</span><span class="st">Program Files</span><span class="ch">\\</span><span class="st">R</span><span class="ch">\\</span><span class="st">R-4.3.2</span><span class="ch">\\</span><span class="st">bin</span><span class="ch">\\</span><span class="st">R.exe"</span><span class="er">,</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.rpath.linux"</span><span class="er">:</span> <span class="st">"/usr/local/bin/R"</span><span class="er">,</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.rterm.linux"</span><span class="er">:</span> <span class="st">"/home/yliao/miniforge3/bin/radian"</span><span class="er">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.removeLeadingComments"</span><span class="er">:</span> <span class="kw">true</span><span class="er">,</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.session.levelOfObjectDetail"</span><span class="er">:</span> <span class="st">"Normal"</span><span class="er">,</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"r.bracketedPaste"</span><span class="er">:</span> <span class="kw">true</span><span class="er">,</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong><span class="math inline">\(\LaTeX\)</span> in VSCode</strong></p>
 <ul>
@@ -532,24 +538,58 @@ window.Quarto = {
 <h1>Digital brain: Obsidian</h1>
 <p><a href="https://obsidian.md/download">Obsidian download</a></p>
 <p>Markdown-based note-taking.</p>
-<p>My Obsidian vault is currently stored in 1TB UBC OneDrive and periodically backed up to GitHub repository.</p>
-<p><strong>Extensions</strong> <img src="ObsidianPlugins_240110.png" class="img-fluid"></p>
-<p>Highlights:</p>
+<p>My Obsidian vault is currently stored in 100GB Google Drive (paid plan…) and periodically backed up to GitHub repository.</p>
+<section id="community-plugins" class="level2">
+<h2 class="anchored" data-anchor-id="community-plugins">Community plugins</h2>
+<p>Core:</p>
 <ul>
-<li><a href="https://github.com/denolehov/obsidian-git">Obsidian Git</a>: back up entire vault to a GitHub repository</li>
-<li><a href="https://github.com/mgmeyers/obsidian-zotero-integration">Obsidian Zotero Integration</a>
+<li><a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview</a>: enable data index and query for MD files</li>
+<li><a href="https://github.com/denolehov/obsidian-git">Git</a>: back up entire vault to a GitHub repository
 <ul>
-<li>Easily add cite-key &amp; citations from Zotero, import notes &amp; metadata as templated LitNotes</li>
-<li><a href="https://www.youtube.com/watch?v=CGGeMrtyjBI">Danny Hatcher: Zotero Obsidian Integration</a> LitNotes overview</li>
-<li><a href="https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd">Alexandra Phelan: An Updated Academic Workflow: Zotero &amp; Obsidian</a></li>
+<li>I only run Git sync on my laptop to prevent weird conflict issues across multiple devices - there is a “Disable on this device” setting.</li>
 </ul></li>
-<li><a href="https://github.com/mgmeyers/obsidian-pandoc-reference-list">Obsidian Pandoc Reference List</a></li>
-<li><a href="https://github.com/SilentVoid13/Templater">Templater</a>: template plugin that can execute JavaScript code, can automate creation of daily notes
+<li><a href="https://github.com/silentvoid13/Templater">Templater</a>: template plugin that can execute JavaScript code, can automate creation of daily notes
 <ul>
 <li><a href="https://dannb.org/blog/2022/obsidian-daily-note-template/">Dann Berg: My Obsidian Daily Note Template</a></li>
 </ul></li>
 </ul>
+<p>Zotero:</p>
+<ul>
+<li><a href="https://github.com/mgmeyers/obsidian-zotero-integration">Zotero Integration</a>: add cite-key &amp; citations from Zotero, import notes &amp; metadata as templated LitNotes
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CGGeMrtyjBI">Danny Hatcher: Zotero Obsidian Integration</a> LitNotes overview</li>
+<li><a href="https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd">Alexandra Phelan: An Updated Academic Workflow: Zotero &amp; Obsidian</a></li>
+</ul></li>
+<li><a href="https://github.com/obsidian-community/obsidian-pandoc-reference-list">Pandoc Reference List</a>: display a formatted reference in Obsidian’s sidebar for each pandoc citekey in the active document</li>
+</ul>
+<p>Functionality:</p>
+<ul>
+<li><a href="https://github.com/tgrosinger/advanced-tables-obsidian">Advanced Tables</a>: improved table manipulation</li>
+<li><a href="https://github.com/wei2912/obsidian-latex">Extended MathJax</a>: extends MathJax LaTeX support</li>
+<li><a href="https://github.com/husjon/obsidian-file-cleaner-redux">File Cleaner Redux</a>: helper to remove unused/empty MD files and attachments</li>
+<li><a href="https://github.com/lukeleppan/better-word-count">Better Word Count</a>: counts words of selected text in editor</li>
+</ul>
+<p>Import/Export:</p>
+<ul>
+<li><a href="https://github.com/ganesshkumar/obsidian-excel-to-markdown-table">Excel to Markdown Table</a>: paste tables from Excel/Sheets as MD tables</li>
+<li><a href="https://github.com/bingryan/obsidian-markdown-export-plugin">Markdown Export</a>: export directory/single MD (including pictures) to a folder</li>
+</ul>
+</section>
+<section id="templates" class="level2">
+<h2 class="anchored" data-anchor-id="templates">Templates</h2>
+<ul>
+<li><a href="templates/Daily Template.md" target="_blank" download="">Daily Template</a></li>
+<li><a href="templates/LitNote Manual.md" target="_blank" download="">LitNote</a>
+<ul>
+<li><a href="templates/LitNote Manual ClinTrial.md" target="_blank" download="">LitNote: Clinical Trial</a></li>
+<li><a href="templates/LitNote Manual Reviews.md" target="_blank" download="">LitNote: Reviews</a></li>
+</ul></li>
+</ul>
+<p>The <code>Daily notes</code> Core plugin automatically places new file locations in my <code>/Daily</code> folder under custom format <code>YYYY/YYYY-MM/YYYY-MM-DD-ddd</code>.</p>
+<p>For LitNotes, I use Templater to automatically apply these templates depending on the folder that the note is created in.</p>
+<p><img src="Templater.png" class="img-fluid"></p>
 <hr>
+</section>
 </section>
 <section id="sshfs-win" class="level1">
 <h1>SSHFS-Win</h1>
@@ -633,13 +673,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

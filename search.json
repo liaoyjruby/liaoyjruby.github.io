@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "rublog.html",
-    "href": "rublog.html",
-    "title": "Rublog",
-    "section": "",
-    "text": "Workflow setup\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Yi Jou (Ruby) Liao",
     "section": "",
-    "text": "Hi friends!\nI’m currently a PhD student in the Wyatt Lab at the Vancouver Prostate Centre studying prostate cancer genomics, as part of the University of British Columbia (UBC) Genome Science and Technology (GSAT) program.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. I was a Research Assistant at the Graeber Lab, where I contributed to a project characterizing recurrent ovarian cancers and assisted with the UCLA Metabolomics Center.\nCheck out my CV or LinkedIn for more of my background.\nIn my free time, I enjoy listening to music (indie/alt/pop/k-pop/electronic) and playing video games (simulation/sandbox/story-driven)."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "WIP"
+    "text": "Hi friends!\nI’m currently a PhD Candidate in the Wyatt Lab at the Vancouver Prostate Centre studying prostate cancer genomics, as part of the University of British Columbia (UBC) Genome Science and Technology (GSAT) program.\nPreviously, I graduated from University of California, Los Angeles (UCLA) in 2022 with a BS in Computational & Systems Biology with a Concentration in Data Science. I was a Research Assistant at the Graeber Lab, where I contributed to a project characterizing recurrent ovarian cancers and assisted with the UCLA Metabolomics Center.\nCheck out my CV or LinkedIn for more of my background.\nIn my free time, I enjoy listening to music (indie/alt/pop/k-pop/electronic) and playing video games (simulation/sandbox/story-driven)."
   },
   {
     "objectID": "posts/workflow/index.html",
@@ -33,5 +19,33 @@
     "title": "Workflow setup",
     "section": "Running R in VSCode",
     "text": "Running R in VSCode\nR in Visual Studio Code - Set R path setting to R executable path (ex. /usr/local/bin/R)\n\nR extension\nradian: alternative R console with syntax highlighting and multiline editing\n\nSet bracketed paste to true\nSet R terminal to radian path (ex. /home/yliao/miniforge3/bin/radian)\nIf CTRL+Enter keeps creating a new R Interactive session, can try turning “Always Use Active Terminal” off\n\nR Debugger\n\nvscode-R: Interacting with R terminals\nFor self-managed R terminals, add these lines to ~/.Rprofile:\n\nif (interactive() && Sys.getenv(\"RSTUDIO\") == \"\") {\n  Sys.setenv(TERM_PROGRAM = \"vscode\")\n  source(file.path(Sys.getenv(\n    if (.Platform$OS.type == \"windows\") \"USERPROFILE\" else \"HOME\"\n  ), \".vscode-R\", \"init.R\"))\n}\n\nSnippet of R VSCode settings (JSON)\n\n  \"r.plot.useHttpgd\": true,\n  \"r.lsp.diagnostics\": false,\n  \"r.alwaysUseActiveTerminal\": true,\n  \"r.rterm.windows\": \"C:\\\\Users\\\\yliao\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\Scripts\\\\radian.exe\",\n  \"r.rpath.windows\": \"C:\\\\Program Files\\\\R\\\\R-4.3.2\\\\bin\\\\R.exe\",\n  \"r.rpath.linux\": \"/usr/local/bin/R\",\n  \"r.rterm.linux\": \"/home/yliao/miniforge3/bin/radian\",\n  \"r.removeLeadingComments\": true,\n  \"r.session.levelOfObjectDetail\": \"Normal\",\n  \"r.bracketedPaste\": true,\n\n\\(\\LaTeX\\) in VSCode\n\nLaTeX Workshop"
+  },
+  {
+    "objectID": "posts/workflow/index.html#community-plugins",
+    "href": "posts/workflow/index.html#community-plugins",
+    "title": "Workflow setup",
+    "section": "Community plugins",
+    "text": "Community plugins\nCore:\n\nDataview: enable data index and query for MD files\nGit: back up entire vault to a GitHub repository\n\nI only run Git sync on my laptop to prevent weird conflict issues across multiple devices - there is a “Disable on this device” setting.\n\nTemplater: template plugin that can execute JavaScript code, can automate creation of daily notes\n\nDann Berg: My Obsidian Daily Note Template\n\n\nZotero:\n\nZotero Integration: add cite-key & citations from Zotero, import notes & metadata as templated LitNotes\n\nDanny Hatcher: Zotero Obsidian Integration LitNotes overview\nAlexandra Phelan: An Updated Academic Workflow: Zotero & Obsidian\n\nPandoc Reference List: display a formatted reference in Obsidian’s sidebar for each pandoc citekey in the active document\n\nFunctionality:\n\nAdvanced Tables: improved table manipulation\nExtended MathJax: extends MathJax LaTeX support\nFile Cleaner Redux: helper to remove unused/empty MD files and attachments\nBetter Word Count: counts words of selected text in editor\n\nImport/Export:\n\nExcel to Markdown Table: paste tables from Excel/Sheets as MD tables\nMarkdown Export: export directory/single MD (including pictures) to a folder"
+  },
+  {
+    "objectID": "posts/workflow/index.html#templates",
+    "href": "posts/workflow/index.html#templates",
+    "title": "Workflow setup",
+    "section": "Templates",
+    "text": "Templates\n\nDaily Template\nLitNote\n\nLitNote: Clinical Trial\nLitNote: Reviews\n\n\nThe Daily notes Core plugin automatically places new file locations in my /Daily folder under custom format YYYY/YYYY-MM/YYYY-MM-DD-ddd.\nFor LitNotes, I use Templater to automatically apply these templates depending on the folder that the note is created in."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "WIP"
+  },
+  {
+    "objectID": "rublog.html",
+    "href": "rublog.html",
+    "title": "Rublog",
+    "section": "",
+    "text": "Workflow setup\n\n\n\nworkflow\n\n\n\n\n\n\n\n\n\nJun 23, 2026\n\n\nYi Jou (Ruby) Liao\n\n\n\n\n\nNo matching items"
   }
 ]
