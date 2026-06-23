@@ -155,10 +155,10 @@ Import/Export:
 
 ## Templates
 
-- <a href="templates/Daily%20Template.md.txt" target="_blank" download="Daily Template.md">Daily Template</a>
-- <a href="templates/LitNote%20Manual.md.txt" target="_blank" download="LitNote Manual.md">LitNote</a>
-  - <a href="templates/LitNote%20Manual%20ClinTrial.md.txt" target="_blank" download="LitNote Manual ClinTrial.md">LitNote: Clinical Trial</a>
-  - <a href="templates/LitNote%20Manual%20Reviews.md.txt" target="_blank" download="LitNote Manual Reviews.md">LitNote: Reviews</a>
+- <a href="templates/Daily%20Template.md.txt" target="_blank">Daily Template</a>
+- <a href="templates/LitNote%20Manual.md.txt" target="_blank">LitNote</a>
+  - <a href="templates/LitNote%20Manual%20ClinTrial.md.txt" target="_blank">LitNote: Clinical Trial</a>
+  - <a href="templates/LitNote%20Manual%20Reviews.md.txt" target="_blank">LitNote: Reviews</a>
 
 The `Daily notes` Core plugin automatically places new file locations in my `/Daily` folder under custom format `YYYY/YYYY-MM/YYYY-MM-DD-ddd`.
 
